@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ultimate Pro Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🔥 Ultimate Pro Tic Tac Toe 🔥</h1>
+
+<div class="players">
+    <div class="playerBox">
+        <h2 id="p1Name">Player 1</h2>
+        <div class="timer" id="p1Timer">10</div>
+    </div>
+
+    <div class="playerBox">
+        <h2 id="p2Name">Player 2</h2>
+        <div class="timer" id="p2Timer">10</div>
+    </div>
+</div>
+
+<div class="setup">
+    <input type="text" id="player1Input" placeholder="Player 1 Name">
+    <input type="text" id="player2Input" placeholder="Player 2 Name">
+
+    <select id="firstTurn">
+        <option value="X">Player 1 First</option>
+        <option value="O">Player 2 First</option>
+    </select>
+
+    <button onclick="startGame()">Start Game</button>
+</div>
+
+<div id="board"></div>
+
+<h2 id="status"></h2>
+
+<div class="controls">
+    <button onclick="undoMove()">Back Move</button>
+    <button onclick="restartGame()">Restart Game</button>
+</div>
+
+<audio id="tapSound" src="https://www.soundjay.com/button/beep-07.wav"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
