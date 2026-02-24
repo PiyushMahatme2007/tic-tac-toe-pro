@@ -1,0 +1,57 @@
+body {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+#board {
+    width: 270px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    gap: 5px;
+}
+
+.cell {
+    width: 90px;
+    height: 90px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cell:hover {
+    background: #333;
+}
+
+.players {
+    display: flex;
+    justify-content: space-around;
+}
+
+.timer {
+    font-size: 20px;
+    color: yellow;
+}
+
+button {
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.win {
+    background: green !important;
+    animation: flash 0.5s infinite alternate;
+}
+
+@keyframes flash {
+    from { transform: scale(1); }
+    to { transform: scale(1.1); }
+}
